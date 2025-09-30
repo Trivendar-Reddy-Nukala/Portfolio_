@@ -1,0 +1,44 @@
+/* Skills component styles */
+
+.animated-skills-bg {
+	position: relative;
+	z-index: 1;
+}
+.animated-skills-bg::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(120deg, #00ffe7 0%, #0051ff 100%);
+	opacity: 0.08;
+	z-index: 0;
+	pointer-events: none;
+	animation: skillsBgMove 8s linear infinite alternate;
+}
+
+@keyframes skillsBgMove {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.animated-skill-tag {
+	border: 2px solid #0051ff;
+	background: rgba(0, 255, 231, 0.08);
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 0 0 10px #00ffe7, 0 0 20px #0051ff;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	border-radius: 8px;
+	padding: 0.7rem 1.2rem;
+	margin: 0.3rem 0.3rem;
+	position: relative;
+	z-index: 1;
+}
+.animated-skill-tag:hover {
+	background: linear-gradient(90deg, #00ffe7, #0051ff);
+	color: #000;
+	border-color: #00ffe7;
+	box-shadow: 0 0 30px #00ffe7, 0 0 60px #0051ff;
+}

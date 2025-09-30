@@ -1,0 +1,7 @@
+/* Navbar component styles */
+
+@media (max-width: 768px) {
+	.navbar {
+		display: none !important;
+	}
+}
