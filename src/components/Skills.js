@@ -16,6 +16,7 @@ const Skills = () => {
 
   const skills = [
     { name: 'React.js', level: 90, category: 'frontend' },
+    { name: 'HTML5', level: 90, category: 'frontend' },
     { name: 'Node.js', level: 85, category: 'backend' },
     { name: 'MongoDB', level: 80, category: 'database' },
     { name: 'Express.js', level: 85, category: 'backend' },
@@ -26,7 +27,10 @@ const Skills = () => {
     { name: 'Tailwind CSS', level: 85, category: 'frontend' },
     { name: 'MySQL', level: 75, category: 'database' },
     { name: 'RESTful APIs', level: 90, category: 'backend' },
-    { name: 'JWT Auth', level: 80, category: 'backend' }
+    { name: 'Java', level: 90, category: 'Programming Language'},
+    { name: 'javascript', level: 90, category: 'Programming Language'},
+    { name: 'python', level: 90, category: 'Programming Language'},
+    { name: 'C', level: 90, category: 'Programming Language'},
   ];
 
   const containerVariants = {
@@ -76,7 +80,7 @@ const Skills = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          {['Frontend', 'Backend', 'Database', 'Tools'].map((category, idx) => (
+          {['Frontend', 'Backend', 'Database', 'Tools', 'Programming Language'].map((category, idx) => (
             <motion.div
               key={idx}
               className="skill-category"
@@ -96,7 +100,7 @@ const Skills = () => {
               }}>{category}</h3>
               <div className="category-skills">
                 {skills
-                  .filter(s => s.category === category.toLowerCase())
+                  .filter(s => s.category.toLowerCase() === category.toLowerCase())
                   .map((skill, i) => (
                     <motion.span
                       key={i}
