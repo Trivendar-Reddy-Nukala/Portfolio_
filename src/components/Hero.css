@@ -10,9 +10,10 @@
 	.hero-image-container {
 		margin-bottom: 3.5rem;
 		position: static;
+		order: 1; /* show image first on mobile */
 	}
 	.profile-image-placeholder {
-		margin-bottom: 2.5rem;
+			margin-bottom: 2.5rem;
 	}
 	.hero-cta {
 		flex-direction: column;
@@ -21,6 +22,36 @@
 		align-items: center;
 	}
 }
+/* Ensure text comes after image on mobile */
+@media (max-width: 768px) {
+	.hero-text {
+		order: 2;
+		width: 100%;
+		padding: 0 1rem;
+	}
+	.hero-cta .cta-button {
+		width: 100%;
+		max-width: 320px;
+	}
+}
+
+@media (max-width: 480px) {
+	.hero-image-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		order: 1;
+		margin-bottom: 4rem; /* extra spacing for very small screens */
+	}
+	.profile-image-placeholder {
+		margin-bottom: 3.5rem; /* increase gap between photo and info */
+	}
+	.hero-text {
+		order: 2;
+		padding: 0 0.8rem;
+	}
+}
+
 
 .profile-image-placeholder img {
 	width: 220px;

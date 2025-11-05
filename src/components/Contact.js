@@ -18,7 +18,7 @@ const Contact = () => {
       {
         from_name: formState.name,
         from_email: formState.email,
-        message: formState.message
+        message: `${formState.message}\n\nSender Email: ${formState.email}`
       },
       'UWBOOnHLge52NnA8l' // replace with your EmailJS public key
     )
