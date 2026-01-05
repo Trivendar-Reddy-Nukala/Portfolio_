@@ -10,6 +10,7 @@ import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Loader from './components/Loader';
 import Cursor from './components/Cursor';
+import MatrixRain from './components/MatrixRain/MatrixRain';
 import './App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
+            <MatrixRain />
             <Cursor />
             <Navbar />
             <Hero />

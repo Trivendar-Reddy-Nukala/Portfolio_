@@ -10,16 +10,18 @@ const Projects = () => {
   const projects = [
     {
       title: 'MediCamp AI',
-      description: 'Real-time speech-to-speech medical translation app supporting 10+ languages with secure JWT authentication',
+      description: `Architected a full-stack healthcare platform utilizing 2 Generative AI agents to automate
+manual symptom analysis and prescription verification, streamlining the patient diagnostic process and eliminating data
+entry bottlenecks.`,
       tech: ['React', 'Node.js', 'MongoDB', 'Gemini API', 'JWT'],
-      achievements: ['Hackathon Winner', '12 Secured API Routes', 'Rate Limiting Implemented'],
+      achievements: ['Hackathon Winner', 'React interface using 5+ reusable components'],
       github: 'https://github.com/Trivendar-Reddy-Nukala/MediCamp.ai'
     },
     {
       title: 'Ahara Vastra',
       description: 'Full-stack charity platform connecting NGOs with donors for food and clothing distribution',
       tech: ['MERN Stack', 'Express.js', 'Artillery', 'RESTful APIs'],
-      achievements: ['15+ API Endpoints', '1000 Concurrent Users', '<150ms Latency'],
+      achievements: ['8+ API Endpoints', '1000 Concurrent Users', '<150ms Latency'],
       github: 'https://github.com/Trivendar-Reddy-Nukala/AharaVastra'
     }
   ];

@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: #000;
+  background-color: transparent;
   color: #fff;
   overflow-x: hidden;
   cursor: none;
@@ -419,7 +419,7 @@ html {
 .projects-section {
   min-height: 100vh;
   padding: 5rem 5%;
-  background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+  background: transparent;
 }
 
 .projects-container {
@@ -507,7 +507,7 @@ html {
 .achievements-section {
   min-height: 100vh;
   padding: 5rem 5%;
-  background: #000;
+  background: transparent;
 }
 
 .achievements-container {
@@ -580,7 +580,7 @@ html {
 .contact-section {
   min-height: 100vh;
   padding: 5rem 5%;
-  background: linear-gradient(180deg, #0a0a0a 0%, #000 100%);
+  background: transparent;
 }
 
 .contact-container {
@@ -716,7 +716,7 @@ html {
 .about-section {
   min-height: 100vh;
   padding: 5rem 5%;
-  background: #000;
+  background: transparent;
 }
 
 .about-container {
@@ -788,6 +788,7 @@ html {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+
   .hero-content,
   .contact-content {
     grid-template-columns: 1fr;
@@ -817,24 +818,30 @@ html {
   .hero-title {
     font-size: 2.5rem;
   }
+
   .hero-subtitle {
     font-size: 1.5rem;
   }
+
   .section-title {
     font-size: 2rem;
   }
+
   .skills-grid,
   .achievements-grid,
   .stats-section {
     grid-template-columns: 1fr;
   }
+
   .custom-cursor,
   .custom-cursor-dot {
     display: none;
   }
+
   body {
     cursor: auto;
   }
+
   .App,
   .hero-section,
   .skills-section,
@@ -844,42 +851,51 @@ html {
   .about-section {
     padding: 2rem 1rem;
   }
+
   .navbar {
     padding: 1rem 2%;
     flex-direction: column;
     gap: 1rem;
   }
+
   .nav-links {
     gap: 1rem;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .hero-content {
     gap: 2rem;
   }
+
   .hero-image-container {
     width: 200px;
     height: 200px;
   }
+
   .profile-image-placeholder {
     width: 120px;
     height: 120px;
   }
+
   .project-card,
   .achievement-card,
   .skill-category,
   .stat-item {
     padding: 1rem;
   }
+
   .contact-content {
     gap: 2rem;
   }
+
   .about-content {
     gap: 2rem;
   }
 }
 
 @media (max-width: 480px) {
+
   .App,
   .hero-section,
   .skills-section,
@@ -889,31 +905,39 @@ html {
   .about-section {
     padding: 1rem 0.5rem;
   }
+
   .navbar {
     padding: 0.5rem 1%;
     font-size: 1rem;
   }
+
   .nav-logo .logo-text {
     font-size: 1.2rem;
     padding: 0.3rem 0.7rem;
   }
+
   .hero-title {
     font-size: 1.5rem;
   }
+
   .hero-subtitle {
     font-size: 1rem;
   }
+
   .section-title {
     font-size: 1.2rem;
   }
+
   .hero-image-container {
     width: 120px;
     height: 120px;
   }
+
   .profile-image-placeholder {
     width: 70px;
     height: 70px;
   }
+
   .project-card,
   .achievement-card,
   .skill-category,
@@ -921,17 +945,21 @@ html {
     padding: 0.5rem;
     font-size: 0.9rem;
   }
+
   .contact-content {
     gap: 1rem;
   }
+
   .about-content {
     gap: 1rem;
   }
+
   .form-group input,
   .form-group textarea {
     font-size: 0.9rem;
     padding: 0.7rem;
   }
+
   .submit-button {
     padding: 0.7rem 1.2rem;
     font-size: 0.9rem;

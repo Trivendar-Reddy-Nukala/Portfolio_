@@ -11,13 +11,13 @@ const Achievements = () => {
     {
       title: 'Techsaviskaar 3.0 Winner',
       description: 'Led 4-person team to victory against 500+ teams nationwide',
-      date: 'February 2025',
+      date: 'April 2025',
       icon: '🏆'
     },
     {
-      title: 'NPTEL Elite + Silver Badge',
+      title: 'NPTEL Elite',
       description: 'Data Structures and Algorithms in Java certification',
-      date: '2024',
+      date: '2025',
       icon: '🎓'
     },
     {
