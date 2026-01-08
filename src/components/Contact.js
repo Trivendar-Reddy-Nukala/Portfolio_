@@ -1,4 +1,4 @@
-   // components/Contact.jsx
+// components/Contact.jsx
 import React, { useRef, useState } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaCode } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
@@ -22,15 +22,15 @@ const Contact = () => {
       },
       'UWBOOnHLge52NnA8l' // replace with your EmailJS public key
     )
-    .then(
-      (result) => {
-        alert('Message sent successfully!');
-        setFormState({ name: '', email: '', message: '' });
-      },
-      (error) => {
-        alert('Failed to send message. Please try again later.');
-      }
-    );
+      .then(
+        (result) => {
+          alert('Message sent successfully!');
+          setFormState({ name: '', email: '', message: '' });
+        },
+        (error) => {
+          alert('Failed to send message. Please try again later.');
+        }
+      );
   };
 
   const socialLinks = [
@@ -192,7 +192,7 @@ const Contact = () => {
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          <p>© 2025 Trivendar Reddy Nukala. All rights reserved.</p>
+          <p>© 2026 Trivendar Reddy Nukala. All rights reserved.</p>
         </motion.footer>
       </motion.div>
     </section>

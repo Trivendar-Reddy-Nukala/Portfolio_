@@ -11,7 +11,7 @@ const MatrixRain = () => {
     let drops = [];
     const fontSize = 16;
     // Katakana and Latin characters
-    const chars = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポ1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const chars = '01011011000001010101001110101011010010100101001010010111100011';
     const charArray = chars.split('');
 
     const init = () => {
@@ -33,13 +33,13 @@ const MatrixRain = () => {
       ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = 'rgba(0, 255, 70, 0.15)'; // Low intensity green text
+      ctx.fillStyle = 'rgba(0, 255, 70, 0.5)'; // High intensity green text
       ctx.font = `${fontSize}px monospace`;
 
       for (let i = 0; i < drops.length; i++) {
         const text = charArray[Math.floor(Math.random() * charArray.length)];
         const x = i * fontSize;
-        const y = drops[i] * fontSize;
+        const y = drops[i] * fontSize * 1.75;
 
         ctx.fillText(text, x, y);
 
