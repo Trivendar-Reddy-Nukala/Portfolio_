@@ -27,10 +27,10 @@ const Skills = () => {
     { name: 'Tailwind CSS', level: 85, category: 'frontend' },
     { name: 'MySQL', level: 75, category: 'database' },
     { name: 'RESTful APIs', level: 90, category: 'backend' },
-    { name: 'Java', level: 90, category: 'Programming Language'},
-    { name: 'javascript', level: 90, category: 'Programming Language'},
-    { name: 'python', level: 90, category: 'Programming Language'},
-    { name: 'C', level: 90, category: 'Programming Language'},
+    { name: 'Java', level: 90, category: 'Programming Language' },
+    { name: 'javascript', level: 90, category: 'Programming Language' },
+    { name: 'python', level: 90, category: 'Programming Language' },
+    { name: 'C', level: 90, category: 'Programming Language' },
   ];
 
   const containerVariants = {
@@ -43,18 +43,6 @@ const Skills = () => {
     }
   };
 
-  const skillVariants = {
-    hidden: { scale: 0, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        damping: 10,
-        stiffness: 100
-      }
-    }
-  };
 
   return (
     <section id="skills" className="skills-section" ref={ref}>
@@ -116,7 +104,7 @@ const Skills = () => {
                         borderColor: '#00ffe7'
                       }}
                     >
-                      <span style={{fontWeight:'bold'}}>{skill.name}</span>
+                      <span style={{ fontWeight: 'bold' }}>{skill.name}</span>
                     </motion.span>
                   ))}
               </div>

@@ -40,17 +40,6 @@ const Contact = () => {
     { name: 'Email', url: 'mailto:trivendarreddy25@gmail.com', icon: <FaEnvelope size={24} /> }
   ];
 
-  const pathVariants = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        duration: 2,
-        ease: 'easeInOut'
-      }
-    }
-  };
 
   return (
     <section id="contact" className="contact-section" ref={ref}>
