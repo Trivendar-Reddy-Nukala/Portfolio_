@@ -1,66 +1,96 @@
-/* Hero component styles */
+.hero-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom, #0f172a, #1e293b); */
+    /* Removed for global globe */
+    color: #ffffff;
+}
 
+.globe-canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* Behind text */
+    pointer-events: auto;
+    /* Allow mouse interaction for the canvas */
+}
+
+/* Ensure canvas itself doesn't block text completely if we want text selection, 
+   but requirements said "text clickable", so we'll put text on top with higher z-index */
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    /* Above globe */
+    text-align: center;
+    pointer-events: none;
+    /* Let clicks pass through empty areas if needed */
+    /* Let clicks pass through empty areas if needed */
+}
+
+.profile-photo-container {
+    margin-bottom: 2rem;
+    pointer-events: auto;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-content h1,
+.hero-content p {
+    pointer-events: auto;
+    /* Make text clickable/selectable */
+}
+
+.hero-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(to right, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Lift off background */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #cbd5e1;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-	.hero-content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 2.5rem;
-	}
-	.hero-image-container {
-		margin-bottom: 3.5rem;
-		position: static;
-		order: 1; /* show image first on mobile */
-	}
-	.profile-image-placeholder {
-			margin-bottom: 2.5rem;
-	}
-	.hero-cta {
-		flex-direction: column;
-		gap: 1.5rem;
-		width: 100%;
-		align-items: center;
-	}
-}
-/* Ensure text comes after image on mobile */
-@media (max-width: 768px) {
-	.hero-text {
-		order: 2;
-		width: 100%;
-		padding: 0 1rem;
-	}
-	.hero-cta .cta-button {
-		width: 100%;
-		max-width: 320px;
-	}
-}
+    .hero-title {
+        font-size: 2.5rem;
+    }
 
-@media (max-width: 480px) {
-	.hero-image-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		order: 1;
-		margin-bottom: 4rem; /* extra spacing for very small screens */
-	}
-	.profile-image-placeholder {
-		margin-bottom: 3.5rem; /* increase gap between photo and info */
-	}
-	.hero-text {
-		order: 2;
-		padding: 0 0.8rem;
-	}
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
 }
-
-
-.profile-image-placeholder img {
-	width: 220px;
-	height: 220px;
-	object-fit: cover;
-	border-radius: 50%;
-	border: 3px solid #fff;
-	box-shadow: 0 0 30px rgba(255,255,255,0.2);
-	display: block;
-	margin: 0 auto;
-}
-

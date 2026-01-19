@@ -10,7 +10,7 @@ import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Loader from './components/Loader';
 import Cursor from './components/Cursor';
-import MatrixRain from './components/MatrixRain/MatrixRain';
+import GlobeBackground from './components/GlobeBackground';
 import './App.css';
 
 function App() {
@@ -28,25 +28,27 @@ function App() {
         {loading ? (
           <Loader key="loader" />
         ) : (
-          <motion.div
-            key="content"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <MatrixRain />
-            <Cursor />
-            <Navbar />
-            <Hero />
-            <About />
-            <Skills />
-            <Projects />
-            <Achievements />
-            <Contact />
-          </motion.div>
+          <>
+            <GlobeBackground />
+            <motion.div
+              key="content"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Cursor />
+              <Navbar />
+              <Hero />
+              <About />
+              <Skills />
+              <Projects />
+              <Achievements />
+              <Contact />
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
-    </div>
+    </div >
   );
 }
 

@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: transparent;
+  background-color: #0f172a;
+  /* Dark background to match theme and prevent white flash */
   color: #fff;
   overflow-x: hidden;
   cursor: none;
