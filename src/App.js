@@ -11,6 +11,8 @@ import Contact from './components/Contact';
 import Loader from './components/Loader';
 import Cursor from './components/Cursor';
 import GlobeBackground from './components/GlobeBackground';
+import Chatbot from './components/Chatbot/Chatbot';
+
 import './App.css';
 
 function App() {
@@ -44,6 +46,7 @@ function App() {
               <Projects />
               <Achievements />
               <Contact />
+              <Chatbot />
             </motion.div>
           </>
         )}

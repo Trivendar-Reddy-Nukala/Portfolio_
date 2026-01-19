@@ -1,0 +1,33 @@
+Trivendar Reddy Nukala - Full Stack Developer & Computer Science Student.
+Education: Bachelor of Engineering in Computer Science at Vasavi College of Engineering, Hyderabad. Expected graduation May 2027. CGPA: 9.0/10.0.
+Specialization: MERN stack development (MongoDB, Express.js, React.js, Node.js), Data Structures and Algorithms.
+Core Skills:
+- Languages: JavaScript, Java, Python, C.
+- Frontend: React.js, HTML5, Tailwind CSS, Material UI, Framer Motion.
+- Backend: Node.js, Express.js, RESTful APIs, JWT.
+- Database: MongoDB, MySQL.
+- Tools: Git, GitHub, VS Code.
+
+Project: MediCamp AI
+- A full-stack healthcare platform utilizing 2 Generative AI agents.
+- Automates manual symptom analysis and prescription verification.
+- Streamlines patient diagnostic process and eliminates data entry bottlenecks.
+- Tech Stack: React, Node.js, MongoDB, Gemini API, JWT.
+- Achievements: Hackathon Winner, React interface using 5+ reusable components.
+- GitHub: https://github.com/Trivendar-Reddy-Nukala/MediCamp.ai
+
+Project: Ahara Vastra
+- Full-stack charity platform connecting NGOs with donors for food and clothing distribution.
+- Tech Stack: MERN Stack, Express.js, Artillery, RESTful APIs.
+- Achievements: Handles 8+ API Endpoints, tested for 1000 Concurrent Users with <150ms Latency.
+- GitHub: https://github.com/Trivendar-Reddy-Nukala/AharaVastra
+
+Contact Information:
+- Email: trivendarreddy25@gmail.com
+- Phone: +91-830-905-9324
+- Location: Hyderabad, India.
+- LinkedIn: https://www.linkedin.com/in/trivendar-reddy-nukala-0031092a7/ (Simulated link based on profile)
+- GitHub: https://github.com/Trivendar-Reddy-Nukala
+
+Summary for Recruiters:
+Passionate about building scalable web applications and solving complex technical challenges. Experienced in designing, developing, and deploying full-stack solutions. Thrives in fast-paced environments like hackathons. Innovation meets execution.
