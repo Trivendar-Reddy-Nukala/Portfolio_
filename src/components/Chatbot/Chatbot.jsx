@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaPaperPlane, FaTimes, FaRobot } from 'react-icons/fa';
+import { FaPaperPlane, FaTimes } from 'react-icons/fa';
 import './Chatbot.css';
 
 // Using a high-quality placeholder avatar (3D style)
